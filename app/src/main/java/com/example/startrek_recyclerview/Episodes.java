@@ -39,14 +39,5 @@ public class Episodes {
         return image;
     }
 
-    public static ArrayList<Episodes> createEpisodesList(int numEpisodes){
-        ArrayList<Episodes> episodes = new ArrayList<Episodes>();
-        for (int i = 1; i <= numEpisodes; i++){
-//            episodes.add(new Episodes(title, description, link, rating, image));
-            episodes.add(new Episodes("Title1", "D1", "link1.com", 4, R.drawable.spocks_brain));
-        }
-        return episodes;
-
-    }
 
 }

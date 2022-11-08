@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/lvEpisode">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,18 +18,24 @@
         android:layout_width="0dp"
         android:layout_weight="2"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_gravity="top|bottom"
+        android:layout_marginLeft="10dp">
 
         <TextView
             android:id="@+id/epTitle"
             android:text="TITLE"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
         <TextView
             android:id="@+id/epDescription"
             android:text="Description"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
         <RatingBar
             android:id="@+id/epRating"
             android:layout_width="wrap_content"
@@ -36,6 +43,8 @@
             android:numStars="5"
             android:rating="3"
             android:stepSize="1"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="true"
             />
 
     </LinearLayout>
